@@ -7,7 +7,6 @@ form.addEventListener("submit", async function (e) {
   makeImages(res.data);
   form.elements.query.value = "";
 });
-
 const makeImages = (shows) => {
   for (let result of shows) {
     if (result.show.image) {
